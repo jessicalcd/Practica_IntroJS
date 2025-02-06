@@ -28,3 +28,17 @@ const crearLinea = (list) => {
 };
 
 console.log(crearLinea(input2));
+
+// 3.2 Ejercicio
+
+
+const input = 10;
+const secondInput = 1;
+const thirdInput = 11234;
+
+const separador = (number) => {
+    return number.toString().split('').join('-');
+};
+
+console.log(separador(thirdInput));
+

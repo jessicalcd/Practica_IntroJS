@@ -1,4 +1,4 @@
-//3.1 Ejercicio 
+//3.1 Ejercicio  
 
 const input1 = [
     'Downloads',
@@ -24,7 +24,7 @@ const input3 = [
 ];
 
 const crearLinea = (list) => {
-    return list.slice(0, -1).join('/') + '/' + list[list.length - 2] + '.' + list[list.length - 1];
+    return `${list.slice(0, -1).join('/')}/${list[list.length - 2]}.${list[list.length - 1]}`;
 };
 
-console.log(crearLinea(input3))
+console.log(crearLinea(input2));

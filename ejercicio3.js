@@ -49,11 +49,7 @@ const input_2 = 'variable';
 const input_3 = 'pointer';
 
 const invertirLongitud = (cadena) => {
-    //Primero calculamos la longitud de la cadena
-    const longitud = cadena.length;
-    //Ahora invertimos la cadena
-    const invertir = cadena.split('').reverse().join('');
-    return `${longitud} ${invertir}`;
+    return `${cadena.length} ${cadena.split('').reverse().join('')}`;
 };
 
 console.log(invertirLongitud(input_3));

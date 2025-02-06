@@ -21,4 +21,13 @@
     - Para unir el penúltimo y último elemento usamos *${list[list.length - 2]}.${list[list.length - 1]}*.
 
 · *3.2 Ejercicio*
-    - 
+    - Se crea una función que devuelve el número convertido en una cadena separada por guiones '-' .
+    - Convertir el número en una cadena usando *number.toString()*
+    - Dividir la cadena en dígitos individuales con *.split('')*
+    - Unir los elementos del array separador por un guion gracias a *.join('-')*.
+
+· *3.3 Ejercicio*
+    - Se crea una función donde se da una cadena y devuelve la longitud de la cadena seguida de un espacio y la cadena invertida.
+    - Obtener la longitud con *cadena.length*.
+    - Ahora con *cadena.split('').reverse().join('')* dividimos la cadena de texto en un array de caracteres, invertimos y unimos de nuevo.
+

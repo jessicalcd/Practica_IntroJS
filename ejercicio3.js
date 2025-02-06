@@ -42,3 +42,18 @@ const separador = (number) => {
 
 console.log(separador(thirdInput));
 
+//3.3 Ejercicio
+
+const input_1 = 'string';
+const input_2 = 'variable';
+const input_3 = 'pointer';
+
+const invertirLongitud = (cadena) => {
+    //Primero calculamos la longitud de la cadena
+    const longitud = cadena.length;
+    //Ahora invertimos la cadena
+    const invertir = cadena.split('').reverse().join('');
+    return `${longitud} ${invertir}`;
+};
+
+console.log(invertirLongitud(input_3));

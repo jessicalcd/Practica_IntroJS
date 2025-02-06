@@ -1,4 +1,5 @@
-//Creo el objeto usuario
+//Solución del Ejercicio 1
+
 const usuario = {
     nombre: 'Jessica Luz',
     apallidos: 'Cabrera Díaz',
@@ -19,6 +20,5 @@ const usuario = {
     busqueda_activa: true 
 };
 
-//Mostrar por pantalla la fecha de inicio del módulo React
 const moduloReact = usuario.temas.find(tema => tema.nombre === `React`);
 console.log('Fecha de inicio del módulo de React:', moduloReact.fecha_inicio);

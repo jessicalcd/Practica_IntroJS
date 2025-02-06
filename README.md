@@ -1,6 +1,7 @@
 #**Práctica de Introducción a JavaScript**
 
 **Ejercico 1**
+
     - Crear el objeto usuario con los campos indicados
     - Mostra por pantalla la fecha de inicio del módulo React
 
@@ -30,4 +31,12 @@
     - Se crea una función donde se da una cadena y devuelve la longitud de la cadena seguida de un espacio y la cadena invertida.
     - Obtener la longitud con *cadena.length*.
     - Ahora con *cadena.split('').reverse().join('')* dividimos la cadena de texto en un array de caracteres, invertimos y unimos de nuevo.
+
+**Ejercicio 4**
+
+    - Crear dos funciones, una para obtener el listado de desarrolladores con la habilidad "Javascript" y otra para el listado de nombres de los proyectos.
+    - Hay que utilizar map y filter.
+    - Filter y tb includes lo usamos en la función desarrolladoresJS
+    - En la función de nombreProyectos usamos flatMap y map.
+
 

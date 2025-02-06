@@ -13,5 +13,5 @@ const calcularPromedio = (numeros) => {
 const listaNumeros = [1, 2, 3, 4, 5];
 const promedioNumeros = calcularPromedio(listaNumeros);
 
-// Muestro en consola el promedio que es igual a 3
+//Muestro en consola el promedio que es igual a 3
 console.log(promedioNumeros);

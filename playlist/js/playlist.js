@@ -83,7 +83,17 @@ const musicCatalog = () => {
    * @param {string} playlistName - The name of the playlist containing the song.
    * @param {string} title - The title of the song to mark as a favorite.
    */
-  const favoriteSong = (playlistName, title) => {};
+  const favoriteSong = (playlistName, title) => {
+    const playlist = playlists.find(play => play.name === playlistName);
+    if (!playlist) {
+      throw new Error('No se ha encontrado la playlist');
+    }
+    const song = playlist.songs.find(song => song.title === title);
+    if (!song) {
+      throw new Error('No se ha encontrado la canción');
+    }
+    song.favorite = !song.favorite;
+  };
 
   /**
    * Sorts songs in a specific playlist by a given criterion (title, artist, or duration).
@@ -92,7 +102,21 @@ const musicCatalog = () => {
    * @returns {Song[]} The list of sorted songs.
    * @throws {Error} If the playlist is not found or the criterion is invalid.
    */
-  const sortSongs = (playlistName, criterion) => {};
+  const sortSongs = (playlistName, criterion) => {
+    const playlist = playlists.find(play => play.name === playlistName);
+  if (!playlist) {
+    throw new Error('No se ha encontrado la playlist');
+  }
+  if (!['title', 'artist', 'duration'].includes(criterion)) {
+    throw new Error('El criterio no es válido');
+  }
+  return playlist.songs.sort((a, b) => {
+    if (criterion === 'duration') {
+      return a.duration - b.duration;  
+    }
+    return a[criterion].localeCompare(b[criterion]);
+  });
+};
 
   return { createPlaylist, addSongToPlaylist, removeSongFromPlaylist, sortSongs, getAllPlaylists, removePlaylist, favoriteSong };
 };

@@ -17,7 +17,7 @@
 + *3.1 Ejercicio*
     - Hacemos una función para que pase el array de string separado por ' / ', a excepción del último que va separado por un ' . ' .
     - Tiene que ser la misma función para las 3 listas.
-    - Con *list.slice(0,-1)* se obtenemos una sublista sin el último elemento.
+    - Con *list.slice(0,-1)* obtenemos una sublista sin el último elemento.
     - Con *.join('/')* unimos los elementos (excluyendo el último) usando ' / ' como separador.
     - Para unir el penúltimo y último elemento usamos *${list[list.length - 2]}.${list[list.length - 1]}*.
 
@@ -43,20 +43,20 @@
 **Ejercicio 5**
 
 - Hay un código erróneo que tenemos que solventar. El cliente pide un usuario con el id correcto y le devuelve underfined, en lugar de los datos del usuario.
-- Para resolverlo usamos una promesa, así simulamos una llamada asincrónica y devolvemos el resultado correcto cuando la operación haya terminado.
+- Para resolverlo usamos una promesa, así simulamos la llamada asincrónica y devolvemos el resultado correcto cuando la operación haya terminado.
 
 **Ejercicio 6**
 
 - Tenemos un cliente que tiene una página donde se pueden crear listados de canciones. Nos dio el archivo que tenemos que modificar para hacer funcionar su web.
 - Es el archivo playlist.js donde encontramos las funciones que crearemos para que funcione la web:
 
-    1. **createPlaylist**: Crea una nueva playlist con el nombre proporcionado y una lista vacía de canciones.
-    2. **getAllPlaylists**: Devuelve el array de todas las playlists.
-    3. **removePlaylist**: Elimina una playlist del array de playlists usando el nombre de la misma.
-    4. **addSongToPlaylist**: Añade una canción a una playlist. Si la playlist no existe, lanza un error. Además, establece el valor de favorite de la canción como false por defecto.
-    5. **removeSongFromPlaylist**: Elimina una canción de una playlist usando el título de la canción. Si no se encuentra la playlist o la canción, lanza un error.
-    6. **favoriteSong**: Cambia el estado de la canción entre favorita o no favorita, dependiendo del valor actual del campo favorite.
-    7. **sortSongs**: Ordena las canciones de una playlist según el criterio especificado (title, artist o duration). Si el criterio no es válido, lanza un error.
+    - **createPlaylist**: Crea una nueva playlist con el nombre proporcionado y una lista vacía de canciones.
+    - **getAllPlaylists**: Devuelve el array de todas las playlists.
+    - **removePlaylist**: Elimina una playlist del array de playlists usando el nombre de la misma.
+    - **addSongToPlaylist**: Añade una canción a una playlist. Si la playlist no existe, lanza un error. Además, establece el valor de favorite de la canción como false por defecto.
+    - **removeSongFromPlaylist**: Elimina una canción de una playlist usando el título de la canción. Si no se encuentra la playlist o la canción, lanza un error.
+    - **favoriteSong**: Cambia el estado de la canción entre favorita o no favorita, dependiendo del valor actual del campo favorite.
+    - **sortSongs**: Ordena las canciones de una playlist según el criterio especificado (title, artist o duration). Si el criterio no es válido, lanza un error.
 
 
 

@@ -56,7 +56,13 @@ const musicCatalog = () => {
    * @param {{ title: string, artist: string, genre: string, duration: number }} song - The song to add to the playlist.
    * @throws {Error} If the playlist is not found.
    */
-  const addSongToPlaylist = (playlistName, song) => {};
+  const addSongToPlaylist = (playlistName, song) => {
+    const playlist = playlists.find( play => play.name === playlistName);
+    if (!playlist) {
+      throw new Error('No se ha encontrado la playlist');
+    }
+    playlist.songs.push({ ...song, favorite: false });
+  };
 
   /**
    * Removes a song from a specific playlist.
